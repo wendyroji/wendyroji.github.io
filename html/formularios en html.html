@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>formularios</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	 <header>
+            <h1>Formularios en HTML&nbsp;</h1>
+     </header>
+<nav>
+            <ul>
+		<li><a href="../index.html">Inicio</a></li>
+		<li><a href="listas.html">Listas</a><a href="Listas2.html"></a></li>
+		<li><a href="tablas.html">Tablas</a><a href="tablas.html"></a></li>
+		<li><a href="enlaces.html">Enlaces</a><a href="enlaces.html"></a></li>
+		<li><a href="imagenes.html">Imagenes</a><a href="imagenes.html"></a></li>
+		<li><a href="Audio.html">Audio</a><a href="Audio.html"></a></li>
+		<li><a href="videos en html.html">Video</a></li>
+		<li><a href="formularios en html.html">Formularios</a></li>
+	</ul>
+</nav>
+	
+	<main>
+			<section>
+				<h2>Formulario de Ingreso</h2>
+	            <p>Por favor, elige un nombre de usuario único. Este será tu identificador&nbsp;&nbsp;</p>
+	            <p>Crea una contraseña segura que contenga al menos 8 caracteres, incluyendo letras mayúsculas, minúsculas y números. Evita utilizar información personal fácil de adivinar, como tu nombre o fecha de nacimiento. Asegúrate de que tu contraseña sea única y no la utilices en otros sitios.&nbsp;</p>
+<form id="form1" name="form1" method="get">
+      <label for="usuario">USUARIO:</label>
+      <input name="usuario" type="text" id="usuario" maxlength="30">
+      <label for="password">CONTRASEÑA:</label>
+      <input name="password" type="password" id="password" maxlength="6">
+      <input type="submit" name="submit" id="submit" value="Enviar">
+      &nbsp;
+      </form>
+            </section>
+			<section>
+			  <h2>Formulario de Datos Personales&nbsp;</h2>
+				
+		      <p>A continuación, se solicitan algunos datos personales necesarios para completar el formulario. Por favor, asegúrate de proporcionar información exacta y actualizad.&nbsp;</p>
+		      <p>Recuerda revisar que todos los datos sean correctos antes de enviar el formulario. La información proporcionada será tratada con confidencialidad y utilizada únicamente para los fines establecidos.</p>
+<form id="form2" name="form2" method="get">
+      <label for="nombre">NOMBRE:</label>
+      <input type="text" name="nombre" id="nombre">
+      <label for="apellidos">APELLIDOS:&nbsp;</label>
+      <input type="text" name="apellidos" id="apellidos">
+      <label for="edad">EDAD:</label>
+      <input name="edad" type="number" id="edad" max="100" min="10">
+      <br>
+<label for="Pais">PAIS:</label>
+      <select name="Pais" id="Pais">
+        <option value="argentina">ARGENTINA</option>
+        <option value="bolivia">BOLIVIA</option>
+        <option value="colombia">COLOMBIA</option>
+        <option value="mexico">MEXICO</option>
+        <option value="italia">ITALIA</option>
+        <option value="francia">FRANCIA</option>
+        <option value="noruega">NORUEGA</option>
+      </select>
+      <label>GENERO:&nbsp;</label>
+      <p>
+        <label>
+          <input type="radio" name="GENERO" value="masculino" id="GENERO_0">
+          MASCULINO</label>
+        <br>
+        <label>
+          <input type="radio" name="GENERO" value="femenino" id="GENERO_1">
+          FEMENINO</label>
+            
+		    </p>
+			   
+      <label>ÁREA EN LA QUE BUSCA DESEMPEÑARSE&nbsp;</label>
+	      <p>
+          
+            <label>
+              <input type="checkbox" name="música" value="rock" id="muacutesica_1">
+            Servicios</label>
+            <br>
+            <label>
+              <input type="checkbox" name="música" value="jazz" id="muacutesica_2">
+            Negocios y Finanzas            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="música" value="alternativa" id="muacutesica_3">
+              Ciencias y Tecnología                        </label>
+            <br>
+            <label>
+              <input type="checkbox" name="música" value="clasica" id="muacutesica_4">
+            Artes y Diseño            </label>
+            <br>
+            <br>
+      </p>
+<input type="submit" name="submit2" id="submit2" value="Enviar">
+<br>
+
+      </form>
+	    </section>
+			<section>
+		<h2>DATOS ADICIONALES&nbsp;&nbsp;</h2>
+				
+		   <p>Este formulario está diseñado para recopilar información adicional que nos ayudará a brindarte un mejor servicio. Apreciamos tu tiempo y te aseguramos que toda la información proporcionada será tratada de manera confidencial y utilizada exclusivamente para los fines establecidos.Por favor, completa todos los campos requeridos.&nbsp;</p>
+		   <form id="form3" name="form3" method="post">
+		     <label for="month">&nbsp;FECHA DE NACIMIENTO</label>
+             <input type="month" name="month" id="month">
+             <label for="tel">Tel:</label>
+             <input type="tel" name="tel" id="tel">
+             <label for="email">Email:</label>
+             <input type="email" name="email" id="email">
+             <label for="fileField">Sube tu curriculum:</label>
+             <input name="fileField" type="file" id="fileField">
+             <label for="textarea">Describete en 3 frases:</label>
+             <textarea name="textarea" id="textarea"></textarea>
+             <label>Estado civil&nbsp;</label>
+             <p>
+               <label>
+                 <input type="radio" name="RadioGroup1" value="casado" id="RadioGroup1_0">
+               Casado</label>
+               <br>
+               <label>
+                 <input type="radio" name="RadioGroup1" value="unionl libre" id="RadioGroup1_1">
+                 Unión libre</label>
+               <br>
+               <label>
+                 <input type="radio" name="RadioGroup1" value="soltero" id="RadioGroup1_2">
+                 Soltero</label>
+               <input type="submit" name="submit3" id="submit3" value="Enviar">
+               <br>
+             </p>
+&nbsp;
+           </form>
+      </section>
+	</main>
+</body>
+</html>
