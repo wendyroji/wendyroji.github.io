@@ -1,1 +1,0 @@
-# wendyroji.github.io
