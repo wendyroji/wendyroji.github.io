@@ -239,6 +239,11 @@ border-collapse: collapse;
     color: cadetblue;
 }
 
+#tabla4
+{
+	border-collapse:collapse;
+	width: 150%;
+}
 
 #filtro1
 {
